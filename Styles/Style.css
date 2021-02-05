@@ -1,0 +1,379 @@
+/* global variables/ declaring  */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
+
+:root {
+  --Background-White: #ffffff;
+  --Background-Dark: #2b2b2b;
+  --Font-Color1: #434543;
+  --Font-Color2: #f8f8f8;
+  --Hover-Color: beige;
+  --BorderBottomColor: rgb(153, 153, 153);
+  --BannerColor: #db3613;
+}
+
+td {
+  width: 200px;
+  height: 400px;
+}
+.HoverColorChange:active {
+  background-color: var(--Hover-Color);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--Background-White);
+}
+/* Section  Styling */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: var(--Background-White);
+}
+.Red {
+  background-color: red;
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+.BannerColor {
+  background-color: var(--BannerColor);
+}
+
+.Height {
+  height: 100%;
+}
+.StrictHeight {
+}
+.DisplayOnTop {
+  z-index: 1;
+}
+.DisplayBehind {
+  z-index: -1;
+}
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.MainImg {
+  height: 60%;
+  width: 600px;
+  object-fit: cover;
+}
+.DisplayPicture {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.imgSizing {
+  height: 50%;
+  object-fit: cover;
+}
+.ImgController img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+.test {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 220;
+  height: 290;
+}
+.Footer {
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+}
+
+.test {
+  height: 20%;
+  width: 20%;
+}
+/* Element Styling */
+ul {
+  margin: 0;
+}
+.PartnerImgConditionalSizing {
+  width: 50%;
+}
+.PaddingVertical {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.PaddingVerticalList {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.PaddingHorizontal {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* .PaddingHeadLine {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+} */
+
+.FitContent {
+  width: fit-content;
+}
+
+.Border {
+  border: 1px solid rgb(153, 153, 153);
+}
+.BorderBottom {
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.BorderRight {
+  border-right: 1px solid rgb(153, 153, 153);
+}
+.BorderTop {
+  border-top: 1px solid rgb(153, 153, 153);
+}
+li {
+  margin: 0;
+  border-width: 2px;
+  padding: 1%;
+  list-style-type: none;
+}
+.ListSizing li {
+  width: 25%;
+}
+
+li a {
+  list-style-type: none;
+  text-decoration: none;
+  border-bottom-color: var(--main-bg-color);
+  color: var(--Font-Color1);
+}
+
+li a {
+  cursor: pointer;
+}
+
+.ColorChangeonHover:hover {
+  background-color: var(--Hover-Color);
+}
+
+/* Positioning  */
+.Column {
+  display: flex;
+  flex-direction: column;
+}
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+.RowColumn {
+  display: flex;
+  flex-direction: row;
+}
+
+.FullHeight {
+  height: 100%;
+}
+.Full {
+  width: 100%;
+}
+.HalfHeight {
+  height: 25%;
+}
+.HeightAuto {
+  height: auto;
+}
+.Quarter {
+  width: 25%;
+}
+.MainSection {
+  width: 70%;
+}
+.OptionBox {
+  width: 30%;
+}
+.Sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--Background-White);
+}
+
+.PaddingButton {
+  padding: 1.5%;
+}
+.StrictButton {
+  width: 120px;
+  height: 30px;
+}
+.MarginVertical {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.MarginVertical2 {
+  padding-top: 5%;
+}
+
+.ContentRight {
+  justify-content: right;
+}
+.Center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.CenterListitems {
+  display: flex;
+  text-align: left;
+}
+.SpacedEvenly {
+  justify-content: space-around;
+}
+.SpacedBetween {
+  justify-content: space-around;
+}
+.Top {
+  display: flex;
+  align-items: baseline;
+}
+
+.Right {
+  margin-left: auto;
+}
+.Down {
+  margin-top: auto;
+}
+.RightSpecialCase {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.TextRight {
+  text-align: right;
+}
+.TextLeft {
+  text-align: left;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+/* Font Styling  */
+.Bold2 {
+  font-weight: 900;
+}
+.Bold1 {
+  font-weight: 600;
+}
+
+.Background {
+  background-color: var(--Background-White);
+}
+.Background2 {
+  background-color: var(--Background-Dark);
+}
+
+.FontColor1 {
+  color: var(--Font-Color1);
+}
+.FontColor2 {
+  color: var(--Font-Color2);
+}
+.FontSize {
+  font-size: 16px;
+}
+p {
+  font-size: 18px;
+}
+.MarginTop {
+  margin-top: 500px;
+}
+
+/* Media Query  */
+@media only screen and (max-width: 1250px) {
+  .Grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .RowColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    height: 80px;
+    width: 80px;
+  }
+  .DisplayPicture {
+    width: 100%;
+    height: 600px;
+  }
+  .Right {
+    margin-right: auto;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 400px;
+  }
+  .PartnerImgConditionalSizing {
+    width: 100%;
+  }
+  .ConditionalBorderBottom {
+    border-bottom: 1px solid var(--BorderBottomColor);
+  }
+  .RightSpecialCase {
+    margin-right: inherit;
+  }
+  .OptionBox {
+    width: 100%;
+  }
+  .ConditionalCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .PaddingVerticalList {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+  .PaddingHorizontal {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+  .ConditionalPaddingHorizontal {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .MainSection {
+    width: 100%;
+  }
+  .ConditionalTextLeft {
+    text-align: left;
+  }
+
+  .ConditionalSpecialMarginVertical {
+    margin-top: 450px;
+  }
+  .MarginVertical2 {
+    padding-top: 20%;
+  }
+}
